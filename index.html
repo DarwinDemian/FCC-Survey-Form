@@ -1,0 +1,93 @@
+<!-- NOTE: had to use ids instead of classes in a lot of elements because of FCC's requirements to pass the tests -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>FCC Tribute Page</title>
+</head>
+
+<body>
+  
+  <main>  
+    <header>
+      <h1 id="title">ID Software Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve ID Software!</p>
+    </header>
+    
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label> 
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+        <label for="email" id="email-label">Email</label> 
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+  
+        <label for="age" id="number-label">Age <small>(optional)</small></label> 
+        <input type="number" id="number" name="age" placeholder="Age" min="1" max="99">
+        
+  <!--           Select Section               -->
+        
+        <label for="worst-john">Who is the worst John?</label> 
+        <select name="worst-john" id="dropdown" required>
+          <option value="selected" selected disabled id="selected">Select Worst John</option>
+          <option value="carmack">John Carmack</option>
+          <option value="romero">John Romero</option>
+          <option value="lennon">John Lennon</option>
+        </select>
+  <!--                END                     -->
+        
+  <!--            Radio Section               -->
+        
+        <label>Would you recommend Final Doom to your mortal enemies?</label>
+        
+        <div id="radio">
+          <input class="radio" type="radio" name="final-doom" id="yes" value="yes">
+          <label for="yes" class="radio-label">Yes, I'm that evil</label>
+          
+          <input class="radio" type="radio" name="final-doom" id="no" value="no">
+          <label for="no" class="radio-label">No, I'm not that cruel</label>
+          
+          <input class="radio" type="radio" name="final-doom" id="maybe" value="maybe">
+          <label for="maybe" class="radio-label">Maybe, I'm lawful neutral</label>
+        </div>  
+  <!--                END                       -->
+        
+  <!--           Checkbox Section               -->
+        
+        <label for="checkbox">Select all ID games you have played</label>
+        <div id="checkbox">
+          
+          <input id="doom" class="checkbox" type="checkbox" name="id-games" value="doom"> 
+          <label for="doom" class="checkbox-label">Doom</label>
+                  
+          <input id="catacombs-3d" class="checkbox" type="checkbox" name="id-games" value="catacombs-3d"> 
+          <label for="catacombs-3d" class="checkbox-label daikatana">Catacombs 3d</label>
+               
+          <input id="quake" class="checkbox" type="checkbox" name="id-games" value="quake"> 
+          <label for="quake" class="checkbox-label">Quake</label>
+               
+          <input id="wolfenstein" class="checkbox" type="checkbox" name="id-games" value="Wolfestein"> 
+          <label for="wolfenstein" class="checkbox-label">Wolfenstein</label>
+          
+          <input id="shadow-knights" class="checkbox" type="checkbox" name="id-games" value="shadow-heights"> 
+          <label for="shadow-knights" class="checkbox-label">Shadow Knights</label>
+          
+          <input id="hovertank" class="checkbox" type="checkbox" name="id-games" value="hovertank"> 
+          <label for="hovertank" class="checkbox-label">Hovertank 3D</label>
+          
+        </div>
+  <!--               END                        -->
+        
+        <label for="textarea">Tell us about your experience with our brutally good games!</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Come on, don't be a baby..."></textarea>
+        
+        <label for="submit"></label>
+        <input type="submit" name="submit" value="Submit" id="submit">
+    </form>
+  </main>
+
+</body>
+</html>

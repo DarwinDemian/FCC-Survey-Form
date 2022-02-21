@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+body {
+  background-color: grey;
+  background-image: url("https://quakewiki.org/w/images/9/98/John_Romero_-_Making_Quake._Two_computers-_one_to_create%2C_one_to_run._Carmack%27s_computer_to_my_right._Jan_24%2C_1996._%28CGmcmQTUcAE5MI6%29.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main {
+  min-width: 30rem;
+  max-width: 45%;
+  margin: 0 auto;
+  font-family: 'VT323', monospace;
+  color: orange;
+  font-size: 1.5rem;
+  text-shadow: 0.1rem 0.05rem #960000;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  background-color: rgba(10, 0, 0, 0.9);
+}
+
+#title {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+#description {
+  margin-top: 0.1rem;
+  padding-bottom: 0.4rem;
+}
+
+/* Style for the entire form */
+#survey-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.35rem;
+  padding: 1.2rem 0.4rem 1.4rem 0.2rem;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: start;
+  background-color: rgba(10, 0, 0, 0.9);
+}
+
+/* Style for each individual item */
+form label {
+  margin-top: 0.4rem;
+  width: 90%;
+}
+
+form input, #dropdown, textarea {
+  font-size: 1.1rem;
+  font-family: 'VT323', monospace;
+  color: lightgrey;
+  background-color: #12030a;
+  border: 0.14rem solid orange;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  width: 90%;
+}
+
+#dropdown, #submit, textarea {
+  width: 93%;
+}
+
+textarea {
+  max-width: 88%;
+  resize: none;
+}
+
+#dropdown {
+  cursor: pointer;
+}
+
+#dropdown option {
+  font-size: 0.9rem;
+}
+
+#radio, #checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 96%;
+}
+
+.radio, .checkbox {
+  display: none;
+}
+
+.radio-label, .checkbox-label {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  margin-left: 0.8rem;
+  margin-right: 0.4rem;
+  padding: 0.5rem;
+  height: 3.5rem;
+  border: 0.5px solid orange;
+  font-size: 1.2rem;
+}
+
+.checkbox-label {
+  height: 1.5rem;
+}
+
+.radio-label:hover, .checkbox-label:hover {
+  background-color: #14030a;
+  cursor: pointer;
+}
+
+.radio:checked + .radio-label, .checkbox:checked + .checkbox-label {
+  background-color: #28030a;
+}
+
+#submit {
+  background-color: darkorange;
+  font-family: 'VT323', monospace;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 1.3rem;
+  }
+  header {
+    border-radius: 0;
+    font-size: 1.2rem;
+  }
+  #survey-form {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  form label {
+    width: 97%;
+  }
+  form input {
+    width: 95%;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  #dropdown, #submit {
+    width: 97%;
+  }
+  #dropdown, .radio-label, .checkbox-label {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .radio-label, .chebox-label {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .checkbox-label {
+    height: 2.6rem;
+    -ms-flex-preferred-size: 5rem;
+        flex-basis: 5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
