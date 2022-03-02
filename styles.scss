@@ -1,5 +1,3 @@
-// NOTE: had to use ids instead of classes in a lot of elements because of FCC's requirements to pass the tests
-
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
@@ -14,6 +12,7 @@ main {
   min-width: 30rem;
   max-width: 45%;
   margin: 0 auto;
+  padding: 0 0.1rem;
   
   font-family: 'VT323', monospace;
   color: orange;
@@ -125,6 +124,7 @@ textarea { max-width: 88%; resize: none;}
   font-family: 'VT323', monospace;
   color: black;
   cursor: pointer;
+  max-width: 91%;
 }
 
 @media only screen and (max-width: 500px){
